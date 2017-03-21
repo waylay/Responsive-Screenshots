@@ -78,11 +78,9 @@
 		//
 		// URL Button
 		//
-		function addhttp($url) {
-		    if (!preg_match("~^(?:f|ht)tps?://~i", $url)) {
-		        $url = "http://" . $url;
-		    }
-		    return $url;
+		function addhttp(link) {
+				link = (link.indexOf('://') === -1) ? 'http://' + link : link;
+		    return link;
 		}
 		$(".go.button").click(function(event){
 			$("iframe").attr('src', addhttp($( '#url' ).val()) );
