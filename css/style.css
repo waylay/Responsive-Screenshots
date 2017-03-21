@@ -79,7 +79,6 @@ h4 {
 
 .controls {
   width: 300px;
-  height: 250px;
   background-color: #e8e6e6;
   position: absolute;
   top: 20px;
@@ -87,6 +86,7 @@ h4 {
   box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
   z-index: 999;
   font-family: "Arial";
+  padding: 5px;
 }
 form {
     width: 90%;
@@ -97,6 +97,18 @@ div {
     background-repeat: no-repeat;
     background-size: 100%;
     overflow: hidden
+}
+ul{
+  font-size: 13px;
+  border: 1px solid #f59038;
+  background-color: #ffc542;
+  padding: 5px;
+  margin: 15px;
+  list-style-position: outside;
+}
+li{
+  margin-left: 25px;
+  line-height: 1.3em;
 }
 iframe {
     transform-origin: top left;

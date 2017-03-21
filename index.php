@@ -57,7 +57,11 @@
 
 			</form>
 
-
+			<ul>
+				<li>Click anywhere to show/hide;</li>
+				<li>Press F11 / PrintScreen;</li>
+				<li><span>PS: It also works with localhost!</span></li>
+			</ul>
 		</section>
 
 
