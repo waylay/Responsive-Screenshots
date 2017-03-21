@@ -33,7 +33,6 @@
 		</section>
 
 		<section class="controls">
-			<h2>Controls</h2>
 			<form id="website_url" name="website_url">
 
 				<fieldset>
