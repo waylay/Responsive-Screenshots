@@ -75,9 +75,14 @@
 		//
 		// URL Button
 		//
-
+		function addhttp($url) {
+		    if (!preg_match("~^(?:f|ht)tps?://~i", $url)) {
+		        $url = "http://" . $url;
+		    }
+		    return $url;
+		}
 		$(".go.button").click(function(event){
-			$("iframe").attr('src', $( '#url' ).val());
+			$("iframe").attr('src', addhttp($( '#url' ).val()) );
 		});
 
 
@@ -121,6 +126,7 @@
 			},
 			onChange: function (hsb, hex, rgb) {
 				$('body').css('backgroundColor', '#' + hex);
+				$('#colorSelector').css('backgroundColor', '#' + hex);
 			}
 		});
 
@@ -131,7 +137,7 @@
 		$(".layout.button").click(function(event){
 			event.preventDefault();
 			$(".display div").attr('style','');
-			$(".display").attr('class','display').addClass(event.target.getAttribute('data-layout'));			
+			$(".display").attr('class','display').addClass(event.target.getAttribute('data-layout'));
 		});
 
 
